@@ -11,13 +11,15 @@ compinit
 
 export EDITOR='nvim'
 export K9S_EDITOR='nvim'
-export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.local/bin:$HOME/go/bin"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export GCM_CREDENTIAL_STORE='gpg'
 export ZVM_VI_INSERT_ESCAPE_BINDKEY='jk'
 
+source "$HOME/.ghpats.zsh"
 
-export HISTFILE="$HOME/.cargo/bin"
+# export HISTFILE="$HOME/.cargo/bin"
+export HISTFILE="$HOME/.zsh_hist"
 export HISTSIZE=10000
 setopt HIST_IGNORE_DUPS
 setopt HIST_SAVE_NO_DUPS
@@ -25,7 +27,6 @@ setopt HIST_IGNORE_SPACE
 
 alias n=nvim
 alias k=kubectl
-alias cd=z
 alias ls="exa --color=auto --icons=always --show-symlinks"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
