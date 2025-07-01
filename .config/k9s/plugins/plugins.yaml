@@ -1,0 +1,29 @@
+plugins:
+  create:
+    shortCut: Shift-E
+    confirm: false
+    background: false
+    description: "Create New Manifest"
+    scopes:
+      - all
+    command: bash
+    args:
+      - -c
+      - |
+        echo '' > /tmp/k9s-apply.yaml && \
+        nvim /tmp/k9s-apply.yaml && \
+        cat /tmp/k9s-apply.yaml | kubectl --context $CONTEXT -n $NAMESPACE apply -f - | less
+  create-copy:
+    shortCut: Shift-Y
+    confirm: true
+    background: false
+    description: "Copy And Edit Manifest"
+    scopes:
+      - all
+    command: bash
+    args:
+      - -c
+      - |
+        kubectl --context $CONTEXT --namespace $NAMESPACE get $RESOURCE_NAME $COL-NAME -o yaml > /tmp/k9s-apply.yaml && \
+        nvim /tmp/k9s-apply.yaml && \
+        cat /tmp/k9s-apply.yaml | kubectl --context $CONTEXT -n $NAMESPACE apply -f - | less
