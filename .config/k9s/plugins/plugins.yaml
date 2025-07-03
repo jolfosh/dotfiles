@@ -15,9 +15,9 @@ plugins:
         cat /tmp/k9s-apply.yaml | kubectl --context $CONTEXT -n $NAMESPACE apply -f - | less
   create-copy:
     shortCut: Shift-Y
-    confirm: true
+    confirm: false
     background: false
-    description: "Copy And Edit Manifest"
+    description: "Copy & Create New Manifest"
     scopes:
       - all
     command: bash
