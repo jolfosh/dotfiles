@@ -13,6 +13,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate' }
 Plug 'ellisonleao/gruvbox.nvim'
 Plug 'jlcrochet/vim-razor'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'trixnz/sops.nvim'
 call plug#end()
 
 lua require('nvim-tree').setup()
