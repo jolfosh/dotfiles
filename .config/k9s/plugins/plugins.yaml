@@ -27,3 +27,19 @@ plugins:
         kubectl --context $CONTEXT --namespace $NAMESPACE get $RESOURCE_NAME $COL-NAME -o yaml > /tmp/k9s-apply.yaml && \
         nvim /tmp/k9s-apply.yaml && \
         cat /tmp/k9s-apply.yaml | kubectl --context $CONTEXT -n $NAMESPACE apply -f - | less
+  re-run-job:
+    shortCut: Shift-R
+    confirm: false
+    background: true
+    description: "Rerun Job"
+    scopes:
+      - jobs
+    command: bash
+    args:
+      - -c
+      - |
+        kubectl get job $NAME -n $NAMESPACE -o json |
+          jq 'del(.spec.selector)' |
+          jq 'del(.spec.template.metadata.labels)' |
+          kubectl replace --force -f - | less
+
