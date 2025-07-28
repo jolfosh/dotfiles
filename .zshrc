@@ -15,12 +15,14 @@ export PATH="$PATH:$HOME/.local/bin:$HOME/go/bin"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export GCM_CREDENTIAL_STORE='gpg'
 export ZVM_VI_INSERT_ESCAPE_BINDKEY='jk'
+export HYPRSHOT_DIR='~/screenshots'
 
 source "$HOME/.ghpats.zsh"
 
 # export HISTFILE="$HOME/.cargo/bin"
 export HISTFILE="$HOME/.zsh_hist"
 export HISTSIZE=10000
+export SAVEHIST=10000
 setopt HIST_IGNORE_DUPS
 setopt HIST_SAVE_NO_DUPS
 setopt HIST_IGNORE_SPACE

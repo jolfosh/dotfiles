@@ -14,9 +14,11 @@ Plug 'ellisonleao/gruvbox.nvim'
 Plug 'jlcrochet/vim-razor'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'trixnz/sops.nvim'
+"Plug 'qvalentin/helm-ls.nvim', { 'ft': 'helm' }
 call plug#end()
 
 lua require('nvim-tree').setup()
+"lua require('helm-ls').setup()
 
 lua << EOF
 require'nvim-treesitter.configs'.setup {
