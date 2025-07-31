@@ -14,7 +14,8 @@ Plug 'ellisonleao/gruvbox.nvim'
 Plug 'jlcrochet/vim-razor'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'trixnz/sops.nvim'
-"Plug 'qvalentin/helm-ls.nvim', { 'ft': 'helm' }
+Plug 'MeanderingProgrammer/render-markdown.nvim'
+Plug 'jbyuki/venn.nvim'
 call plug#end()
 
 lua require('nvim-tree').setup()

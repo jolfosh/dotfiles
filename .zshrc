@@ -16,6 +16,7 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export GCM_CREDENTIAL_STORE='gpg'
 export ZVM_VI_INSERT_ESCAPE_BINDKEY='jk'
 export HYPRSHOT_DIR='~/screenshots'
+export TIMG_PIXELATION='kitty'
 
 source "$HOME/.ghpats.zsh"
 
