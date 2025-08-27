@@ -16,6 +16,8 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'trixnz/sops.nvim'
 Plug 'MeanderingProgrammer/render-markdown.nvim'
 Plug 'jbyuki/venn.nvim'
+Plug 'mikavilpas/yazi.nvim'
+Plug 'qvalentin/helm-ls.nvim', {'ft': 'helm'}
 call plug#end()
 
 lua require('nvim-tree').setup()
@@ -28,6 +30,8 @@ require'nvim-treesitter.configs'.setup {
 EOF
 
 let mapleader = ' '
+
+lua vim.keymap.set("n", "<leader>-", function() require("yazi").yazi() end)
 
 set background=dark
 colorscheme gruvbox
