@@ -17,17 +17,35 @@ Plug 'trixnz/sops.nvim'
 Plug 'MeanderingProgrammer/render-markdown.nvim'
 Plug 'jbyuki/venn.nvim'
 Plug 'mikavilpas/yazi.nvim'
-Plug 'qvalentin/helm-ls.nvim', {'ft': 'helm'}
+"Plug 'qvalentin/helm-ls.nvim'
 call plug#end()
 
 lua require('nvim-tree').setup()
-"lua require('helm-ls').setup()
 
 lua << EOF
 require'nvim-treesitter.configs'.setup {
 	hightlight = { enable = true }
 }
 EOF
+
+"require("helm-ls").setup({
+"	conceal_templates = {
+"			enabled = false
+"	},
+"	indent_hints = {
+"		enabled = false
+"	},
+"})
+"vim.filetype.add({
+"  extension = {
+"    gotmpl = 'gotmpl',
+"  },
+"  pattern = {
+"    [".*/templates/.*%.tpl"] = "helm",
+"    [".*/templates/.*%.ya?ml"] = "helm",
+"    ["helmfile.*%.ya?ml"] = "helm",
+"  },
+"})
 
 let mapleader = ' '
 
