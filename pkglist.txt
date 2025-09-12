@@ -1,89 +1,82 @@
-alacritty
-antigen
-base
-base-devel
-cmake
-containerd
-docker
-docker-buildx
-dolphin
-dunst
-efibootmgr
-eza
-firefox
-fzf
-ghostty
-git
-git-credential-manager
-git-credential-manager-extras
-grim
-gst-plugin-pipewire
-helm
-htop
-hypridle
-hyprland
-hyprlock
-inetutils
-intel-media-driver
-intel-ucode
-iwd
-k9s
-kitty
-lazygit
-less
-libpulse
-libva-intel-driver
-linux
-linux-firmware
-nano
-neofetch
-neovim
-network-manager-applet
-networkmanager
-nodejs
-npm
-omnissa-horizon-client
-pass
-pipewire
-pipewire-alsa
-pipewire-jack
-pipewire-pulse
-polkit-kde-agent
-qemu-base
-qemu-user-static
-qt5-wayland
-qt6-wayland
-rofi
-rust-analyzer
-sddm
-slurp
-smartmontools
-sof-firmware
-sops
-thunar
-tmux
-ttf-jetbrains-mono-nerd
-twingate
-uwsm
-vim
-vulkan-intel
-vulkan-nouveau
-vulkan-radeon
-waybar
-wget
-wireless_tools
-wireplumber
-wl-clipboard
-wofi
-xdg-desktop-portal-hyprland
-xdg-utils
-xf86-video-amdgpu
-xf86-video-ati
-xf86-video-nouveau
-xorg-server
-xorg-xinit
-yay-git
-yay-git-debug
-zram-generator
-zsh
-zsh-completions
+alacritty 0.15.1-1
+antigen 2.2.3-2
+argocd 3.1.0-1
+base 3-2
+bat 0.25.0-4
+bind 9.20.12-1
+bluetui 0.6-1
+bluez-utils 5.83-1
+creality-print-appimage 6.2.1.3044-1
+dbeaver 25.1.5-1
+discord_arch_electron 1:0.0.108-1
+docker 1:28.3.3-1
+dolphin 25.08.0-1
+dunst 1.13.0-1
+durdraw 0.29.0-2
+efibootmgr 18-3
+eza 0.23.1-1
+firefox 142.0.1-1
+freecad 1.0.2-3
+ghostty 1.1.3-1
+globalprotect-openconnect 1.4.9-2
+helm 3.18.4-1
+helm-ls 0.5.0-1
+htop 3.4.1-1
+hypridle 0.1.7-1
+hyprland 0.50.1-1
+hyprlock 0.9.1-1
+hyprshot 1.3.0-4
+inetutils 2.6-1
+intel-ucode 20250812-1
+k9s 0.50.9-1
+kitty 0.42.2-1
+lazygit 0.54.2-1
+ldproxy 0.3.3-4
+lens-bin 2025.6.21515-1
+mosquitto 2.0.22-2
+mqttui 0.22.1-1
+nano 8.6-1
+neofetch 7.1.0-2
+network-manager-applet 1.36.0-1
+nmap 7.97-1
+noise-suppression-for-voice 1.10-1
+omnissa-horizon-client 2506-2
+pass 1.7.4-7
+pavucontrol 1:6.1-1
+polkit-kde-agent 6.4.4-1
+qemu-base 10.1.0-1
+rainfrog 0.3.7-1
+remote-desktop-manager 2025.2.1.4-1
+rnnoise 1:0.2-1
+rofi 1.7.9.1-1
+rust-analyzer 20250825-1
+sddm 0.21.0-6
+smartmontools 7.5-1
+sof-firmware 2025.05.1-1
+sops 3.10.2-2
+spotify-launcher 0.6.3-2
+teams 1.5.00.23861-1
+thunar 4.20.4-1
+timg 1.6.2-1
+traceroute 2.1.6-1
+ttf-harmonyos-sans 2025.06.21-2
+ttf-jetbrains-mono-nerd 3.4.0-1
+ttf-nanum 2018-1
+twingate 2025.175.154516-1
+vesktop 1.5.8-3
+visual-studio-code-bin 1.103.2-1
+wavemon-git 0.9.6.488.de2f382-1
+waybar 0.14.0-1
+webkit2gtk 2.48.6-1
+wget 1.25.0-2
+wireless_tools 30.pre9-4
+xf86-video-amdgpu 25.0.0-1
+xf86-video-ati 1:22.0.0-2
+xf86-video-nouveau 1.0.18-1
+xorg-xinit 1.4.4-1
+yay-git 12.5.0.r23.g6f3bc5cc-1
+yay-git-debug 12.5.0.r23.g6f3bc5cc-1
+yazi 25.5.31-2
+zig 0.14.1-2
+zram-generator 1.2.1-1
+zsh-completions 0.35.0-3
