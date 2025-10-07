@@ -32,6 +32,7 @@ setopt HIST_IGNORE_SPACE
 alias n=nvim
 alias k=kubectl
 alias ls="exa --color=auto --icons=always --show-symlinks"
+alias cat="bat"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 function y() {
