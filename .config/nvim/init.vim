@@ -17,6 +17,7 @@ Plug 'trixnz/sops.nvim'
 Plug 'MeanderingProgrammer/render-markdown.nvim'
 Plug 'jbyuki/venn.nvim'
 Plug 'mikavilpas/yazi.nvim'
+Plug 'cuducos/yaml.nvim'
 "Plug 'qvalentin/helm-ls.nvim'
 call plug#end()
 
