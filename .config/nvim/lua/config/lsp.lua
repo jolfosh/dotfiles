@@ -66,6 +66,39 @@ require('mason-lspconfig').setup({
     automatic_installation = true,
 })
 
+-- Configure diagnostics display
+vim.diagnostic.config({
+    virtual_text = true,
+    signs = true,
+    underline = true,
+    update_in_insert = false,
+    severity_sort = true,
+    float = {
+        border = 'rounded',
+        source = 'always',
+        header = '',
+        prefix = '',
+    },
+})
+
+-- Show diagnostics in a floating window on cursor hold
+vim.api.nvim_create_autocmd('CursorHold', {
+    callback = function()
+        local opts = {
+            focusable = false,
+            close_events = { 'BufLeave', 'CursorMoved', 'InsertEnter', 'FocusLost' },
+            border = 'rounded',
+            source = 'always',
+            prefix = ' ',
+            scope = 'cursor',
+        }
+        vim.diagnostic.open_float(nil, opts)
+    end
+})
+
+-- Reduce the delay before CursorHold triggers (default is 4000ms)
+vim.opt.updatetime = 500
+
 -- LSP progress notifications with fidget-like behavior
 local progress_notifications = {}
 
@@ -144,6 +177,12 @@ vim.api.nvim_create_autocmd('LspAttach', {
         vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
         vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
         vim.keymap.set('n', '<leader>f', function() vim.lsp.buf.format({ async = true }) end, opts)
+
+        -- Diagnostic keymaps
+        vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, opts)
+        vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
+        vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
+        vim.keymap.set('n', '<leader>dl', vim.diagnostic.setloclist, opts)
 
         -- Enable inlay hints if the server supports it
         if client and client.server_capabilities.inlayHintProvider then

@@ -43,6 +43,7 @@ Plug('ellisonleao/gruvbox.nvim')
 -- Language specific
 Plug('jlcrochet/vim-razor')
 Plug('cuducos/yaml.nvim')
+Plug('elkowar/yuck.vim')
 
 -- Utilities
 Plug('christoomey/vim-tmux-navigator')

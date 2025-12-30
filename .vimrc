@@ -3,6 +3,7 @@ set timeout timeoutlen=500 ttimeoutlen=100
 set clipboard=unnamed,unnamedplus
 set shiftwidth=2
 set tabstop=2
+set expandtab
 set autoindent
 set smartindent
 set number
