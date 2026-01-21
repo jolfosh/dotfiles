@@ -44,6 +44,7 @@
 @define-color layout	@bryellow;
 @define-color battery	@aqua;
 @define-color date	@black;
+@define-color utc	@brblue;
 @define-color time	@white;
 
 /* Reset all styles */
@@ -204,9 +205,20 @@
 	color: @black;
 }
 
-#custom-arrow1 {
+#clock.utc {
+	background: @utc;
+	color: @black;
+}
+
+#custom-arrow0 {
 	font-size: 11pt;
 	color: @time;
+	background: @utc;
+}
+
+#custom-arrow1 {
+	font-size: 11pt;
+	color: @utc;
 	background: @date;
 }
 

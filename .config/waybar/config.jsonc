@@ -28,6 +28,8 @@
 		"tray",
 		"clock#date",
 		"custom/arrow1",
+		"clock#utc",
+		"custom/arrow0",
 		"clock#time"
 	],
 
@@ -58,6 +60,13 @@
 	"clock#time": {
 		"interval": 10,
 		"format": "{:%H:%M}",
+		"tooltip": false
+	},
+
+	"clock#utc": {
+		"interval": 10,
+		"format": "{:%H:%M UTC}",
+		"timezone": "UTC",
 		"tooltip": false
 	},
 
@@ -158,6 +167,11 @@
 	"tray": {
 		"icon-size": 18
 		//"spacing": 10
+	},
+
+	"custom/arrow0": {
+		"format": "",
+		"tooltip": false
 	},
 
 	"custom/arrow1": {

@@ -20,6 +20,7 @@ export DISABLE_AUTOUPDATER=1
 export MAKEFLAGS="-j$(nproc)"
 
 source "$HOME/.ghpats.zsh"
+source "$HOME/.dumb_bindings.zsh"
 
 # export HISTFILE="$HOME/.cargo/bin"
 export HISTFILE="$HOME/.zsh_hist"
