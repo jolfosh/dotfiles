@@ -35,3 +35,8 @@ require('nvim-tree').setup()
 require('nvim-treesitter.configs').setup({
     highlight = { enable = true }
 })
+
+-- Mermaid ASCII rendering
+-- require('nvim-mermaid').setup({
+--     binary = '/home/josh/source/tmp/nvim-mermaid/mermaid-ascii',
+-- })

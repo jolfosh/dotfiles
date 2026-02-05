@@ -54,3 +54,6 @@ Plug('mikavilpas/yazi.nvim')
 Plug('rcarriga/nvim-notify')
 
 vim.call('plug#end')
+
+-- Local plugin: nvim-mermaid
+-- vim.opt.runtimepath:prepend('/home/josh/source/tmp/nvim-mermaid')
