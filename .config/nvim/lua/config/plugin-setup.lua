@@ -31,9 +31,16 @@ vim.notify = require('notify')
 -- NvimTree
 require('nvim-tree').setup()
 
--- Treesitter
-require('nvim-treesitter.configs').setup({
-    highlight = { enable = true }
+-- Treesitter (new main-branch API)
+-- The plugin only installs parsers/queries now; highlighting is provided
+-- by Neovim's built-in `vim.treesitter.start()`. Parsers are installed via
+-- `:TSInstall <lang>` (or `:TSUpdate`) into stdpath('data')/site/parser.
+require('nvim-treesitter').setup()
+
+vim.api.nvim_create_autocmd('FileType', {
+    callback = function(args)
+        pcall(vim.treesitter.start, args.buf)
+    end,
 })
 
 -- Mermaid ASCII rendering

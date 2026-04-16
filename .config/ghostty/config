@@ -42,8 +42,11 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-font-family = "JetBrainsMono Nerd Font"
-font-size = 12
+# font-family = "JetBrainsMono Nerd Font"
+font-family = "Cozette"
+# font-family = "CozetteCrossedSeven"
+# cozette is a bitmap so 13 or 26 are what we end up seeing. I keep it at 18 because then on font size binds it bumps it up and down to 13 and 26 (18 and 19)
+font-size = 18
 
 theme = Gruvbox Dark
 
