@@ -37,6 +37,11 @@ require('nvim-tree').setup()
 -- `:TSInstall <lang>` (or `:TSUpdate`) into stdpath('data')/site/parser.
 require('nvim-treesitter').setup()
 
+-- Use the helm parser for gotmpl-filetype buffers (replaces the old
+-- queries/gotmpl/injections.scm workaround, which caused infinite injection
+-- recursion under the new highlighter).
+vim.treesitter.language.register('helm', 'gotmpl')
+
 vim.api.nvim_create_autocmd('FileType', {
     callback = function(args)
         pcall(vim.treesitter.start, args.buf)
