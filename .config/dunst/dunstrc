@@ -1,0 +1,61 @@
+[global]
+    monitor = 0
+    follow = mouse
+
+    origin = bottom-right
+    offset = (10, 10)
+    width = 350
+    height = (0, 300)
+
+    gap_size = 5
+    padding = 12
+    horizontal_padding = 12
+    corner_radius = 5
+    frame_width = 2
+
+    separator_color = frame
+    separator_height = 2
+
+    font = JetBrainsMono Nerd Font 10
+    markup = full
+    format = "<b>%s</b>\n%b"
+    alignment = left
+    vertical_alignment = center
+    show_indicators = yes
+
+    icon_position = left
+    min_icon_size = 24
+    max_icon_size = 48
+    enable_recursive_icon_lookup = true
+
+    sort = yes
+    idle_threshold = 120
+    history_length = 20
+    show_age_threshold = 60
+
+    dmenu = /usr/bin/dmenu -p dunst:
+    browser = /usr/bin/xdg-open
+
+    mouse_left_click = do_action, close_current
+    mouse_middle_click = close_all
+    mouse_right_click = close_current
+
+[urgency_low]
+    background = "#1a1a1aee"
+    foreground = "#8f8f8f"
+    frame_color = "#595959"
+    timeout = 5
+
+[urgency_normal]
+    background = "#1a1a1aee"
+    foreground = "#ffffff"
+    frame_color = "#33ccff"
+    highlight = "#33ccff, #00ff99"
+    timeout = 8
+
+[urgency_critical]
+    background = "#1a1a1aee"
+    foreground = "#ffffff"
+    frame_color = "#ff6633"
+    highlight = "#ff6633, #ff0066"
+    timeout = 0
