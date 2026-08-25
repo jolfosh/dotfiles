@@ -36,6 +36,14 @@ alias ls="exa --color=auto --icons=always --show-symlinks"
 alias cat="bat"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
+function argopf() {
+    local ns="${1:-argocd}"
+    local port="${2:-8080}"
+    kubectl get secret argocd-initial-admin-secret -n "$ns" -o json \
+        | jq -r .data.password | base64 -d | wl-copy \
+        && kubectl port-forward "svc/argocd-server" -n "$ns" "${port}:80"
+}
+
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
