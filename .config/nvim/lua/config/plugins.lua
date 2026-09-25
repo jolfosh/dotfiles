@@ -32,7 +32,7 @@ Plug('tpope/vim-repeat')
 
 -- Fuzzy finder
 Plug('nvim-lua/plenary.nvim')
-Plug('nvim-telescope/telescope.nvim', { branch = '0.1.x' })
+Plug('nvim-telescope/telescope.nvim')
 
 -- Syntax highlighting
 Plug('nvim-treesitter/nvim-treesitter', { branch = 'main', ['do'] = ':TSUpdate' })
