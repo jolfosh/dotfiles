@@ -7,7 +7,7 @@ set expandtab
 set autoindent
 set smartindent
 set number
-set relativenumber
+"set relativenumber
 set smartcase
 set nowrap
 set hlsearch
